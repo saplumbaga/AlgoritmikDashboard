@@ -1,0 +1,57 @@
+mixin c-DefaultHeader
+  nav.c-default-navbar
+    .c-default-navbar__start
+      button.c-default-navbar__mobile-button
+        i.material-icons-outlined menu
+      
+      form.c-default-navbar__search
+        button
+          i.material-icons-outlined search
+        input(type="text" placeholder="Search something")
+    
+    .c-default-navbar__end
+      .c-default-navbar__notifications.new
+        .c-default-navbar__notifications__label(tabindex="0")
+          i.material-icons-outlined notifications
+          span
+        
+        ul.c-default-navbar__notifications__dropdown
+          li
+            a(href="#")
+              strong A new monthly report is ready to download!
+              i 10/11/2020 15:28
+          li
+            a(href="#")
+              strong $290.29 has been deposited into your account!
+              i 10/11/2020 15:28
+          li
+            a(href="#")
+              strong Spending Alert: We've noticed unusually high spending for your account.
+              i 10/11/2020 15:28
+          li
+            a.c-button(href="#") Show All Notifications
+      
+      .c-default-navbar__user
+        .c-default-navbar__user__label(tabindex="0")
+          img(src="/images/avatar.png", alt="")
+          strong samilhazir
+          i.material-icons-outlined expand_more
+        ul.c-default-navbar__user__dropdown
+          li
+            a(href="/")
+              i.material-icons-outlined account_circle
+              | Profile
+          li
+            a(href="/")
+              i.material-icons-outlined settings
+              | Settings
+          li
+            a(href="/")
+              i.material-icons-outlined toc
+              | Activity Log
+          li
+            hr
+          li
+            a(href="/")
+              i.material-icons-outlined logout
+              | Sign Out

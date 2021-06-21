@@ -1,0 +1,12 @@
+mixin SlideNavigation
+  // nav.w-sn 
+  nav.w-sn&attributes(attributes)
+    .w-sn__wrapper
+      block
+  // ## nav.w-sn 
+
+mixin SlideNavigationItem(name)
+  // .w-sn__item 
+  .w-sn__item(data-sn-item=name)&attributes(attributes)
+    block
+  // ## .w-sn__item 

@@ -1,0 +1,25 @@
+@charset 'utf-8';
+
+// load all utilites
+@import 'base/utils';
+
+// load all fonts
+@import 'typography/imports';
+
+// vendors (Bootstrap, jQuery UI, Owl Carousel...)
+@import 'vendors/imports';
+
+// base
+@import 'base/imports';
+
+// layouts
+@import 'layouts/imports';
+
+// widgets (buttons, modals, dropdowns...)
+@import 'widgets/imports';
+
+// components (headers, navbars, cards, footers...)
+@import 'components/imports';
+
+// pages
+@import 'pages/imports';

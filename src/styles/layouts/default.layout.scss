@@ -1,0 +1,7 @@
+main.default-content {
+  margin-left: 320px;
+
+  @include media('<xlarge') {
+    margin-left: 0;
+  }
+}

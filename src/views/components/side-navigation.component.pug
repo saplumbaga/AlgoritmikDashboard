@@ -1,0 +1,93 @@
+mixin c-SideNavigation
+  aside.c-side-navigation
+    .c-side-navigation__wrapper
+      .c-side-navigation__start
+        a.c-side-navigation__logo(href="/")
+          img(src="/images/algoritmik-logo.png", alt="")
+      
+      .c-side-navigation__center
+        nav.c-side-navigation__nav
+          ul
+            li
+              a(href="/")
+                strong
+                  i.material-icons-outlined home
+                  | Dashboard
+                .c-badge.purple 6
+          
+          h6 Management
+          ul
+            li
+              span(tabindex="0")
+                strong
+                  i.material-icons-outlined data_usage
+                  | Analytics
+                i.material-icons-outlined chevron_left
+              ul
+                li
+                  a(href="#") Test Dropdown Menu 1
+                li
+                  a(href="#") Test Dropdown Menu 2
+                li
+                  a(href="#") Test Dropdown Menu 3
+                li
+                  a(href="#") Test Dropdown Menu 4
+                li
+                  a(href="#") Test Dropdown Menu 5
+            li
+              a(href="/")
+                strong
+                  i.material-icons-outlined people
+                  | Customers
+            li
+              a(href="/")
+                strong
+                  i.material-icons-outlined local_offer
+                  | Products
+            li
+              a(href="/")
+                strong
+                  i.material-icons-outlined shopping_cart
+                  | Orders
+            li
+              a(href="/")
+                strong
+                  i.material-icons-outlined receipt
+                  | Invoices
+          
+          h6 Pages
+          ul
+            li
+              span(tabindex="0")
+                strong
+                  i.material-icons-outlined lock
+                  | Authentication
+                i.material-icons-outlined chevron_left
+              ul
+                li
+                  a(href="#") Test Dropdown Menu 1
+                li
+                  a(href="#") Test Dropdown Menu 2
+                li
+                  a(href="#") Test Dropdown Menu 3
+                li
+                  a(href="#") Test Dropdown Menu 4
+                li
+                  a(href="#") Test Dropdown Menu 5
+            li
+              a(href="/")
+                strong
+                  i.material-icons-outlined lock
+                  | Customers
+                .c-badge.green new
+          
+          h6 Components
+          ul
+            li
+              a(href="/")
+                strong
+                  i.material-icons-outlined equalizer
+                  | Charts
+
+      .c-side-navigation__end
+        .c-side-navigation__version Algoritmik Dashboard v0.1

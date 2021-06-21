@@ -1,0 +1,110 @@
+.c-main-header {
+  background-color: #25bcbd;
+  background-image: url('/images/header-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 134px 32px null;
+  user-select: none;
+
+  @include media('<small') {
+    padding: 102px 16px null;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    @include media('<small') {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__start {
+      h1 {
+        color: #f5f5f5;
+        font-size: 24px;
+        font-weight: $weight-semibold;
+        margin-bottom: 4px;
+      }
+
+      @include media('<small') {
+        margin-bottom: 16px;
+      }
+    }
+
+    &__end {
+      a.c-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 48px;
+        padding: null 32px;
+        background-color: $white;
+        color: #25bcbd;
+        font-size: 14px;
+        font-weight: $weight-semibold;
+        line-height: 1;
+        border-radius: 48px;
+        border: 2px solid $white;
+        transition: all 500ms;
+
+        &:hover {
+          background-color: rgba($white, 0.15);
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #eeeeee;
+
+    a {
+      display: inline-block;
+      font-weight: $weight-medium;
+      color: #eeeeee;
+    }
+
+    i.material-icons-outlined {
+      margin: null 4px;
+      font-size: 18px;
+    }
+
+    strong {
+      font-weight: $weight-semibold;
+    }
+  }
+
+  &__tabs {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: flex;
+
+    li {
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding: null 32px;
+        border-bottom: 4px solid transparent;
+        font-weight: $weight-semibold;
+        color: $white;
+      }
+
+      &.active {
+        a {
+          border-bottom-color: $white;
+        }
+      }
+    }
+  }
+}

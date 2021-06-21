@@ -1,0 +1,17 @@
+mixin c-MainHeader(title)
+  header.c-main-header
+    .c-main-header__head
+      .c-main-header__head__start
+        h1= title
+        .c-main-header__breadcrumbs
+          a(href="/") Home
+          i.material-icons-outlined chevron_right
+          strong Dashboard
+      .c-main-header__head__end
+        a.c-button(href="/") Text Button
+    
+    ul.c-main-header__tabs
+      li.active
+        a(href="#") Page Tab 1
+      li
+        a(href="#") Page Tab 2

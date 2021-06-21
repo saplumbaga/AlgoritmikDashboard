@@ -1,0 +1,98 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp watch",
+    "build:dev": "gulp build",
+    "build:prod": "gulp build --prod",
+    "generate": "node generate"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.pug": "pug-lint",
+    "*.scss": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": [
+    "> 0.1%",
+    "IE 11"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rinXer7/pxlayer-new.git"
+  },
+  "keywords": [
+    "gulp",
+    "js",
+    "sass",
+    "pug",
+    "linters"
+  ],
+  "author": "Muhammed Yasar BARDAKLAR <myasarbardaklar47@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rinXer7/pxlayer-new/issues"
+  },
+  "homepage": "https://github.com/rinXer7/pxlayer-new#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/eslint-parser": "^7.12.17",
+    "@babel/plugin-transform-runtime": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/register": "^7.12.13",
+    "@babel/runtime": "^7.12.18",
+    "@zoxon/emitty": "^1.4.2",
+    "autoprefixer": "^10.2.4",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.14",
+    "browserify": "^17.0.0",
+    "cssnano": "^4.1.10",
+    "del": "^6.0.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-image": "^6.2.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
+    "postcss": "^8.2.6",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-property-lookup": "^2.0.0",
+    "postcss-short": "^5.0.0",
+    "postcss-sort-media-queries": "^3.6.5",
+    "posthtml": "^0.15.1",
+    "posthtml-inline-svg": "^0.2.0",
+    "prettier": "^2.2.1",
+    "pug-lint": "^2.6.0",
+    "stylelint": "^13.10.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.5.1"
+  }
+}

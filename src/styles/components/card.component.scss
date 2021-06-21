@@ -1,0 +1,30 @@
+.c-card {
+  background-color: $white;
+  border-radius: 6px;
+  box-shadow: 0 12 16px -4px rgba(#000, 0.05);
+  overflow: hidden;
+
+  &__head {
+    padding: 24px 28px;
+    border-bottom: 1px solid rgba(#424242, 0.1);
+    user-select: none;
+
+    strong {
+      display: block;
+      font-weight: $weight-bold;
+      color: #424242;
+      line-height: 1;
+    }
+
+    p {
+      color: #424242;
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 8px;
+    }
+  }
+
+  &__body {
+    overflow: hidden;
+  }
+}

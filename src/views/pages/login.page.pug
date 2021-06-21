@@ -1,0 +1,16 @@
+extends ../layouts/login.layout.pug
+
+block body
+  main.login-content
+    .p-login__wrapper
+      img(src="/images/algoritmik-logo.png", alt="")
+      h1 Welcome Back
+      p Enter your credentials to access your account.
+      form.p-login__form
+        label.p-login__form__item
+          i.material-icons-outlined email
+          input(type="email" placeholder="Enter your email")
+        label.p-login__form__item
+          i.material-icons-outlined lock
+          input(type="email" placeholder="Enter your password")
+        button Sign In

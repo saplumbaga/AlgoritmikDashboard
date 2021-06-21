@@ -1,0 +1,51 @@
+extends ../layouts/default.layout.pug
+
+block body
+  +c-MainHeader('Form details page')
+  section.p-form__content
+    +c-Card('Edit Profile', 'Complete your profile')
+      form.p-form__form
+        .row.g-4
+          .col-xxl-4.col-xl-12
+            .p-form__form__item
+              input(type="text" placeholder="Company (disabled)" disabled)
+          .col-xxl-4.col-xl-12.col-md-6
+            .p-form__form__item
+              input(type="text" placeholder="Username")
+          .col-xxl-4.col-xl-12.col-md-6
+            .p-form__form__item
+              input(type="email" placeholder="Email")
+          .col-xl-6
+            .p-form__form__item
+              input(type="text" placeholder="First Name")
+          .col-xl-6
+            .p-form__form__item
+              input(type="text" placeholder="Last Name")
+          .col-xl-12
+            .p-form__form__item
+              input(type="text" placeholder="Address")
+          .col-xxl-4.col-xl-12.col-md-6
+            .p-form__form__item
+              select
+                option(selected disabled hidden) City
+                option 1
+                option 2
+                option 3
+          .col-xxl-4.col-xl-12.col-md-6
+            .p-form__form__item
+              input(type="text" placeholder="Country")
+          .col-xxl-4.col-xl-12.col-md-6
+            .p-form__form__item
+              input(type="text" placeholder="Postal Code")
+          .col-xl-12
+            .p-form__form__item
+              textarea(placeholder="Bio")
+          .col-xl-12
+            label.p-form__form__item.checkbox
+              input(type="checkbox")
+              span
+                i.material-icons-outlined done
+              strong Basic Checkbox Design Colors with Filled In
+          .col-12
+            .p-form__form__item
+              button Update Profile

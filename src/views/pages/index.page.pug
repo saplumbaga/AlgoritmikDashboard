@@ -1,0 +1,142 @@
+extends ../layouts/default.layout.pug
+
+block body
+  +c-MainHeader('Admin Dashboard')
+  section.p-home__cards
+    .p-home__cards__wrapper
+      .row.g-4
+        .col-xxl-3.col-sm-6
+          .p-home__cards__item
+            i.material-icons-outlined credit_card
+            .p-home__cards__item__body
+              span Transfer via Card number
+              strong $1200
+        .col-xxl-3.col-sm-6
+          .p-home__cards__item
+            i.material-icons-outlined sync_alt
+            .p-home__cards__item__body
+              span Transfer Other Banks
+              strong $150
+        .col-xxl-3.col-sm-6
+          .p-home__cards__item
+            i.material-icons-outlined account_balance
+            .p-home__cards__item__body
+              span Transfer Same Bank
+              strong $1500
+        .col-xxl-3.col-sm-6
+          .p-home__cards__item
+            i.material-icons-outlined receipt_long
+            .p-home__cards__item__body
+              span Transfer to Other Bank
+              strong $1500
+  
+
+  section.p-home__content
+    .row.g-4
+      .col-xxl-8
+        +c-Card('Simple Table', 'Here is a subtitle for this table')
+          .p-home__table
+            .table-responsive
+              table.table
+                thead
+                  tr
+                    th Invoice
+                    th User
+                    th Date
+                    th Amount
+                    th Status
+                    th Country
+                tbody
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+                  tr
+                    td Order #123456
+                    td Lorem Ipsum
+                    td Oct 16, 2017
+                    td $158,00
+                    td Pending
+                    td USA
+      
+      .col-xxl-4
+        +c-Card('Employees Stats', 'New employees on 15th September, 2016')
+          .p-home__card
+            img(src="/images/pexels-paul-ijsendoorn-33041.jpg", alt="")
+            .p-home__card__body
+              h6 Sample Listing Blog Post
+              p Holisticly maximize team building ROI via next-generation resources. Enthusiastically promote team driven customer service and error-free solutions. Dynamically myocardinate vertical leadership for synergistic "outside the box" thinking. Efficiently extend global.
+              a.c-button(href="/") Text Button

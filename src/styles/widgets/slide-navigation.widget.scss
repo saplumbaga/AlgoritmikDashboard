@@ -1,0 +1,28 @@
+.w-sn {
+  overflow: hidden;
+
+  &__wrapper {
+    position: relative;
+    transition: all 500ms;
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all 500ms;
+    @include visible(false);
+
+    &:first-child {
+      position: static;
+      transform: none;
+      @include visible(true);
+    }
+
+    &.w-sn__item--activated {
+      @include visible(true);
+    }
+  }
+}
