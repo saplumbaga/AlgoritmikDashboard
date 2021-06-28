@@ -1,5 +1,5 @@
 {
-  "name": "gulp-boilerplate",
+  "name": "algoritmik-dashboard",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rinXer7/pxlayer-new.git"
+    "url": "git+https://github.com/saplumbaga/AlgoritmikDashboard.git"
   },
   "keywords": [
     "gulp",
@@ -35,12 +35,12 @@
     "pug",
     "linters"
   ],
-  "author": "Muhammed Yasar BARDAKLAR <myasarbardaklar47@gmail.com>",
-  "license": "ISC",
+  "author": "Algoritmik <info@algoritmik.net>",
+  "license": "GPL",
   "bugs": {
-    "url": "https://github.com/rinXer7/pxlayer-new/issues"
+    "url": "https://github.com/saplumbaga/AlgoritmikDashboard/issues"
   },
-  "homepage": "https://github.com/rinXer7/pxlayer-new#readme",
+  "homepage": "https://github.com/saplumbaga/AlgoritmikDashboard",
   "devDependencies": {
     "@babel/core": "^7.12.17",
     "@babel/eslint-parser": "^7.12.17",
