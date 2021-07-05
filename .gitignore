@@ -102,3 +102,6 @@ typings/
 # build
 build/
 .build/
+
+dist/
+.dist/
